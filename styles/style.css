@@ -1,0 +1,40 @@
+/* ===================== [General Style] ===================== */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.round-icon {
+    background-color: var(--round-icons-bg);
+    margin-right: 5px;
+    width: var(--round-icons-size);
+    height: var(--round-icons-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icons-list .round-icon a {
+    color: inherit;
+}
+
+/* ===================== [Header] ===================== */
+#home {
+    --round-icons-bg: rgba(0, 0, 0, 0.3);
+    --round-icons-size: 35px;
+}
+
+header {
+    background-image: url("./../images/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header p.display-5 {
+    font-weight: 800;
+}

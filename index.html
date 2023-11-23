@@ -14,10 +14,49 @@
 </head>
 
 <body>
-    <!-- Font awesome js -->
-    <script src="./js/all.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <main>
+        <header id="home" class="vh-100 text-white">
+            <div class="bg-black bg-opacity-75 h-100 d-flex justify-content-center align-items-center text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="display-5">Hello</p>
+                            <h1 class="display-4 fw-lighter mb-4">I Am <span class="fw-normal" id="header-animation"></span>
+                            </h1>
+                            <div class="icons-list d-flex justify-content-center">
+                                <div class="round-icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+                                <div class="round-icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                                <div class="round-icon"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                                <div class="round-icon"><a href="#"><i class="fa-brands fa-behance"></i></a></div>
+                                <div class="round-icon"><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+
+
+    <!-- Typed js library -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Typed js customization -->
+    <script>
+        var typed = new Typed('#header-animation', {
+            strings: ['Larry Daniels', 'Developer', 'Designer'],
+            typeSpeed: 150,
+            backSpeed: 75,
+            fadeOut: false,
+            fadeOutClass: 'typed-fade-out',
+            smartBackspace: false,
+            loop: true
+        });
+    </script>
+</body>
+<!-- Font awesome js -->
+<script src="./js/all.min.js"></script>
+<!-- Bootstrap js -->
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
