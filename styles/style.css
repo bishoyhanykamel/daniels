@@ -1,8 +1,4 @@
 /* ===================== [General Style] ===================== */
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
 :root {
     --black-primary-color: #1c1c1c;
     --black-title-color: #343434;
@@ -10,6 +6,10 @@ body {
     --lighter-black-color: #f7f7f7;
     --section-text-color: #748182;
     font-size: 14px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .round-icon {
@@ -87,7 +87,7 @@ body {
 .section-title h2::after {
     content: "";
     position: absolute;
-    height: 100%;
+    height: 75%;
     top: 50%;
     left: 0;
     right: 0;
@@ -227,4 +227,19 @@ div.navbar-collapse.show a::after {
 .services {
     background-color: var(--lighter-black-color);
     color: var(--black-title-color);
+}
+
+.services .round-icon {
+    --round-icons-size: 75px;
+    --round-icons-bg: #f4f4f4;
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.services .round-icon i {
+    font-size: 2rem;
+}
+
+.services .item:hover .round-icon {
+    background-color: var(--black-primary-color);
+    color: white;
 }
