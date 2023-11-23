@@ -9,6 +9,7 @@ body {
     --light-black-color: #999;
     --lighter-black-color: #f7f7f7;
     --section-text-color: #748182;
+    font-size: 14px;
 }
 
 .round-icon {
