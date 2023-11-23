@@ -245,3 +245,7 @@ div.navbar-collapse.show a::after {
 }
 
 /* ===================== [Portfolio] ===================== */
+
+.portfolio .nav-tabs .active {
+    border: none;
+}
