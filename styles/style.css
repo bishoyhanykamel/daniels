@@ -97,3 +97,30 @@ div.navbar-collapse.show a, div.navbar-collapse.show .active {
 div.navbar-collapse.show a::after {
     background-color: black;
 }
+
+/* ===================== [About] ===================== */
+
+.about .about-img  {
+    --overflow-px: 30px;
+    position: relative;
+    z-index: 3;
+    left: calc(var(--overflow-px) / 2);
+}
+
+.about .about-img::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/dots.png");
+    height: calc(50% + var(--overflow-px));
+    width: calc(70% + var(--overflow-px));
+    top: 50%;
+    left: calc(-1 * var(--overflow-px));
+    /* top: 0;
+    bottom: 0;
+    right: -100px;
+    left:0; */
+    color: black;
+    z-index: -1;
+    background-position: center;
+    background-repeat: repeat;
+}
