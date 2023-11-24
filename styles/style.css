@@ -398,3 +398,8 @@ div.navbar-collapse.show a::after {
 .contact textarea {
     resize: none;
 }
+
+/* ===================== [Footer] ===================== */
+footer {
+    background-color: var(--black-primary-color);
+}
