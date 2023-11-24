@@ -101,6 +101,18 @@ body {
     color: var(--black-title-color);
 }
 
+.item-with-overlay .round-icon {
+    color: var(--lighter-grey-color);
+    font-size: 0.8rem;
+}
+
+.item-with-overlay .round-icon:hover {
+    color: #000;
+    border: 1px solid #000;
+    background-color: var(--lighter-grey-color);
+    cursor: pointer;
+}
+
 /* ===================== [Header] ===================== */
 #home {
     --round-icons-bg: rgba(0, 0, 0, 0.3);
@@ -304,18 +316,6 @@ div.navbar-collapse.show a::after {
     bottom: 0;
 }
 
-.item-with-overlay .round-icon {
-    color: var(--lighter-grey-color);
-    font-size: 0.8rem;
-}
-
-.item-with-overlay .round-icon:hover {
-    color: #000;
-    border: 1px solid #000;
-    background-color: var(--lighter-grey-color);
-    cursor: pointer;
-}
-
 /* ===================== [Clients] ===================== */
 .clients .carousel img {
     width: 80px;
@@ -358,5 +358,15 @@ div.navbar-collapse.show a::after {
     left: 0;
     right: 0;
     bottom: 0;
-    /* transform: scale(0.7, 0.7); */
+    scale: 0.7;
+    transform: rotateY(-180deg);
+    transition: scale var(--team-anim-duration),  opacity var(--team-anim-duration), transform var(--team-anim-duration);
+    opacity: 0;
 }
+
+.team .item-with-overlay:hover .img-overlay-layer {
+    opacity: 1;
+    scale: 1;
+    transform: rotateY(0);
+}
+
