@@ -391,4 +391,10 @@ div.navbar-collapse.show a::after {
     background-color: var(--black-primary-color);
     color: white;
 }
+.contact .input {
+    outline: none;
+}
 
+.contact textarea {
+    resize: none;
+}
