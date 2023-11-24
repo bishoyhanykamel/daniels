@@ -5,6 +5,8 @@
     --light-black-color: #999;
     --lighter-grey-color: #f7f7f7;
     --section-text-color: #748182;
+    --dark-to-light-anim: 0.7s;
+    --light-to-dark-anim: 0.7s;
     font-size: 14px;
 }
 
@@ -46,7 +48,7 @@ body {
 
 .light-to-dark-bg {
     background-color: #fff;
-    transition: background-color 0.7s;
+    transition: background-color var(--light-to-dark-anim);
     color: var(--black-title-color);
     border: 1px solid var(--black-title-color);
 }
@@ -61,12 +63,11 @@ body {
     background-color: var(--black-primary-color);
     color: white;
     border: 1px solid var(--black-title-color);
-    transition: background-color 0.7s;
+    transition: background-color var(--dark-to-light-anim);
 }
 
 .dark-to-light-bg:hover {
     background-color: #fff;
-    transition: background-color 0.7s;
     color: var(--black-title-color);
     border: 1px solid var(--black-title-color);
 }
@@ -373,3 +374,21 @@ div.navbar-collapse.show a::after {
 .team .member-text {
     background-color: rgba(52, 52, 52,.8);
 }
+
+
+/* ===================== [Contact] ===================== */
+.contact {
+    --round-icons-bg: black;
+    --round-icons-size: 4.25rem;
+    --icon-hover-anim: 0.5s;
+}
+
+.contact .round-icon {
+    transition: background-color var(--icon-hover-anim), color var(--icon-hover-anim);
+}
+
+.contact .icon-hover:hover .round-icon {
+    background-color: var(--black-primary-color);
+    color: white;
+}
+
