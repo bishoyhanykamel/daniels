@@ -1,0 +1,16 @@
+@media screen and (min-width:50px) and (max-width: 200px) {
+    .section-title h2{
+        font-size: 1.2rem;
+    }
+
+    :root {
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (min-width:201px) and (max-width: 400px) {
+    :root {
+        font-size: 10px;
+    }
+}
