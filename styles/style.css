@@ -245,7 +245,7 @@ div.navbar-collapse.show a::after {
 /* ===================== [Services] ===================== */
 
 .services .round-icon {
-    --round-icons-size: 75px;
+    --round-icons-size: 6.5rem;
     --round-icons-bg: #f4f4f4;
     transition: background-color 0.7s, color 0.7s;
 }
