@@ -3,7 +3,7 @@
     --black-primary-color: #1c1c1c;
     --black-title-color: #343434;
     --light-black-color: #999;
-    --lighter-black-color: #f7f7f7;
+    --lighter-grey-color: #f7f7f7;
     --section-text-color: #748182;
     font-size: 14px;
 }
@@ -225,7 +225,7 @@ div.navbar-collapse.show a::after {
 
 /* ===================== [Services] ===================== */
 .services {
-    background-color: var(--lighter-black-color);
+    background-color: var(--lighter-grey-color);
     color: var(--black-title-color);
 }
 
@@ -246,6 +246,45 @@ div.navbar-collapse.show a::after {
 
 /* ===================== [Portfolio] ===================== */
 
+.portfolio {
+    --round-icons-bg: black;
+    --round-icons-size: 30px;
+    --portfolio-anim-duration: 0.7s;
+}
+
 .portfolio .nav-tabs .active {
     border: none;
+}
+
+.portfolio .portfolio-overlay p {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: var(--black-title-color);
+}
+
+.portfolio .portfolio-overlay {
+    top: 30px;
+    bottom: -10px;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity var(--portfolio-anim-duration), top var(--portfolio-anim-duration), bottom var(--portfolio-anim-duration);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+}
+
+.portfolio .round-icon {
+    color: var(--lighter-grey-color);
+    font-size: 0.8rem;
+}
+
+.portfolio .round-icon:hover {
+    color: #000;
+    border: 1px solid #000;
+    background-color: var(--lighter-grey-color);
+    cursor: pointer;
 }
