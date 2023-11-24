@@ -95,6 +95,11 @@ body {
     background-image: url("../images/dots.png");
 }
 
+.bg-section-grey {
+    background-color: var(--lighter-grey-color);
+    color: var(--black-title-color);
+}
+
 /* ===================== [Header] ===================== */
 #home {
     --round-icons-bg: rgba(0, 0, 0, 0.3);
@@ -224,10 +229,6 @@ div.navbar-collapse.show a::after {
 }
 
 /* ===================== [Services] ===================== */
-.services {
-    background-color: var(--lighter-grey-color);
-    color: var(--black-title-color);
-}
 
 .services .round-icon {
     --round-icons-size: 75px;
