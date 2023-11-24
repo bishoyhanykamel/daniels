@@ -314,3 +314,28 @@ div.navbar-collapse.show a::after {
     background-color: var(--lighter-grey-color);
     cursor: pointer;
 }
+
+/* ===================== [Clients] ===================== */
+.clients .carousel img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.clients .carousel p.section-text {
+    word-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.clients .carousel-inner .carousel-item:not(.active) {
+    visibility: none;
+}
+
+.clients .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #343434;
+    
+}
+
