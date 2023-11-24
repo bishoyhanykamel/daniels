@@ -197,23 +197,23 @@ div.navbar-collapse.show a::after {
 
 /* ===================== [About] ===================== */
 #about {
-    --overflow-px: 30px;
+    --overflow-px: 3rem;
 }
 
 .about .about-img {
     position: relative;
     z-index: 3;
-    left: calc(var(--overflow-px) / 2);
+    left: calc(var(--overflow-px / 2));
 }
 
 .about .about-img::after {
     content: "";
     position: absolute;
     background-image: url("../images/dots.png");
-    height: calc(50% + var(--overflow-px));
-    width: calc(70% + var(--overflow-px));
-    top: 50%;
-    left: calc(-1 * var(--overflow-px));
+    height: calc(50% + var(--overflow-px) + 1rem);
+    width: calc(50% + var(--overflow-px) + 1rem);
+    top: calc(50% - (var(--overflow-px) / 2));
+    right: calc(50% - (var(--overflow-px) / 2));
     color: black;
     z-index: -1;
     background-position: center;
@@ -349,7 +349,7 @@ div.navbar-collapse.show a::after {
 /* ===================== [Team] ===================== */
 .team {
     --round-icons-bg: black;
-    --round-icons-size: 30px;
+    --round-icons-size: 2rem;
     --team-anim-duration: 0.7s;
 }
 
@@ -370,3 +370,6 @@ div.navbar-collapse.show a::after {
     transform: rotateY(0);
 }
 
+.team .member-text {
+    background-color: rgba(52, 52, 52,.8);
+}
