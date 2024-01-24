@@ -1,5 +1,5 @@
 @media screen and (min-width:50px) and (max-width: 200px) {
-    .section-title h2{
+    .section-title h2 {
         font-size: 1.2rem;
     }
 
@@ -12,5 +12,25 @@
 @media screen and (min-width:201px) and (max-width: 400px) {
     :root {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.navbar-collapse.show {
+        background-color: white;
+    }
+
+    div.navbar-collapse.show .responsive-p {
+        padding: 0.75rem 0;
+
+    }
+
+    div.navbar-collapse.show a,
+    div.navbar-collapse.show .active {
+        color: black;
+    }
+
+    div.navbar-collapse.show a::after {
+        background-color: black;
     }
 }
